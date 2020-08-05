@@ -149,6 +149,18 @@ line-height: 1.36;
 letter-spacing: 0.06em;
 }
 
+.portfolio-title {
+    margin-top: 0;
+margin-bottom: 30px;
+color:#ffffff;
+
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+letter-spacing: 0.06em;
+text-align: center;
+}
+
 /* Мне кажется логичней и удобней так сделать, у нас h2  одинаковый на всех страницах 
 Но если нужно можно создать отдельных класс   */
 h2 {
@@ -174,6 +186,8 @@ line-height: 1.14;
 text-transform: uppercase;
 }
 .team-title {
+display: block;
+padding-top: 30px;
 color: var(--title-text-color);
 
 font-weight: 500;
@@ -182,7 +196,8 @@ line-height: 1.19;
 
 }
 .team-text {
-
+display: block;
+padding-top:10px;
 font-size: 16px;
 line-height: 1.19;
 
@@ -266,7 +281,7 @@ color: #ffffff;
 
 .feature-list, .box-list, .client-list, .team-list {
 display: flex;
-margin-top: 50px;
+padding-top: 50px;
 }
 
 /* Классы одинаковые, можно прописать в одну строку */
@@ -313,6 +328,9 @@ padding-top: 94px;
 padding-bottom: 94px;
 }
 
+.box-list .items {
+width: calc((100% - 60px)/3); 
+}
 
 .box-list .items + .items {
 margin-left:30px;
@@ -342,6 +360,7 @@ text-align: center;
 .team-icon {
     display: flex;
     justify-content: center;
+    padding-top: 16px;
     padding-bottom: 24px;
 
 }
@@ -351,6 +370,7 @@ text-align: center;
 }
 
 .team-style {
+    width: calc((100% - 90px)/4);
     background-color: var(--bg-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -360,10 +380,12 @@ text-align: center;
     margin-right: 30px;
 }
 
+
+
 /* Футер */
 .footer {
 display: flex;
-align-items: center;
+align-items: baseline;
 width: 1200px;
 margin-left: auto;
 margin-right: auto;
@@ -391,23 +413,39 @@ display: flex;
 .social {
 margin-left:69px;
 }
-/*  */
+
+.social-title {
+display: block;
+padding-bottom: 20px;
+color:#ffffff;  
+font-weight: 700;
+line-height: 1.14;
+text-transform: uppercase;
+}
 
 .project-list {
     display: flex;
+    flex-wrap: wrap;
+    
 }
 
 .project-items {
-width: calc((100%-60px)/3);
-margin-right:30px;
+width: calc((100% - 60px)/3);
+margin-right: 30px;
 margin-bottom: 30px;
+
+border: 1px solid #EEEEEE;
 }
 
-/* .project-items:nth-child(3n){
+.project-items:nth-child(3n){
     margin-right: 0;
-} */
+} 
 
  .project-items:nth-last-child(-n+3) {
     margin-bottom: 0;
    
 } 
+.project-block {
+    margin: 20px 24px;
+}
+
