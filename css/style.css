@@ -2,6 +2,8 @@
 /* Ширина портфолио 1170px */
 /* Отступы портфолио margin 215px */
 
+
+ 
 :root {
  --primary-text-color:#757575;
 --bg-color:#ffffff;
@@ -21,30 +23,35 @@ font-size: 14px;
 line-height: 1.17;
 letter-spacing: 0.03em;
 }
+
 footer {
 background-color: var(--bg-footer);
 }
+
 /* Сброс стилей списка */
 .reset-ul {
 padding: 0;
 margin: 0;
 list-style-type: none;
 } 
-/* Сброс стилей заголовка */
-.reset-h {
+
+/* Сброс стилей  */
+
+.reset {
     padding: 0;
-    margin: 0;    
+    margin: 0;     
 }
+.reset-link {
+
+    text-decoration: none;   
+}
+
 address {
 
     font-style: normal;  
 }
 
 /* Временно дял красоты */
-body a {
-
-    text-decoration: none;   
-}
 
 
 .logo {
@@ -214,10 +221,23 @@ background-color: #F5F4FA;
 color:#212121;
 
 }
+
  .menu-filter button:hover, .menu-filter button:focus{
 background-color: var(--accent-color);
 color: var(--button-color);
+}
 
+.menu-filter {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-filter .items + .items{
+    margin-left:8px;
+}
+.project{
+    margin-top: 50px;
+    
 }
 .project-text {
 color: var(--primary-text-color);
@@ -225,6 +245,7 @@ font-size: 16px;
 line-height: 1.9;
 
 }
+
 .project-desc {
 color:#ffffff;
 
@@ -233,12 +254,19 @@ line-height: 1.6;
 }
 
 .logo-footer {
+display: block;
+margin-bottom: 20px;
+font-family: 'Raleway', sans-serif;
+font-weight:700;
+font-size: 26px;
+line-height: 1.19;
+
 color: #ffffff;
 }
 
 .feature-list, .box-list, .client-list, .team-list {
 display: flex;
-padding-top: 50px;
+margin-top: 50px;
 }
 
 /* Классы одинаковые, можно прописать в одну строку */
@@ -331,3 +359,55 @@ text-align: center;
 .team-style:not(:last-child) {
     margin-right: 30px;
 }
+
+/* Футер */
+.footer {
+display: flex;
+align-items: center;
+width: 1200px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 60px;
+padding-bottom: 60px;
+}
+
+.marg {
+margin-top: 9px;
+
+}
+
+.social-list {
+display: flex;
+
+}
+
+.social-list .items + .items {
+    padding-left:10px;
+    
+}
+
+.social {
+margin-left:69px;
+}
+/*  */
+
+.project-list {
+    display: flex;
+}
+
+.project-items {
+width: calc((100%-60px)/3);
+margin-right:30px;
+margin-bottom: 30px;
+}
+
+/* .project-items:nth-child(3n){
+    margin-right: 0;
+} */
+
+ .project-items:nth-last-child(-n+3) {
+    margin-bottom: 0;
+   
+} 
