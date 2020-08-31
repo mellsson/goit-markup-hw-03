@@ -198,6 +198,7 @@ line-height: 1.19;
 .team-text {
 display: block;
 margin-top:10px;
+margin-bottom: 30px;
 font-size: 16px;
 line-height: 1.19;
 
@@ -220,7 +221,9 @@ line-height: 1.9;
 letter-spacing: 0.06em;
 
 }
-
+.button:hover, .button:focus {
+cursor: pointer;
+}
 .project-title {
 color:var(--title-text-color);
 font-weight: 700;
@@ -318,6 +321,14 @@ margin-left: 30px;
 
 }
 
+.team {
+    margin-top:94px; 
+
+}
+.feature {
+    margin-top:94px; 
+}
+
 .container {
 width: 1200px;
 margin-left: auto;
@@ -327,7 +338,21 @@ padding-right: 15px;
 padding-top: 94px;
 padding-bottom: 94px;
 }
+.container-feature {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
+.container-box {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .box-list .items {
 width: calc((100% - 60px)/3); 
 }
