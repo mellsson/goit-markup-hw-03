@@ -229,6 +229,17 @@ letter-spacing: 0.06em;
 cursor: pointer;
 }
 
+.menu-button {
+padding:6px 22px;
+background: #F5F4FA;
+border-radius: 4px;
+font-weight: 500;
+font-size: 16px;
+line-height:1.625;
+
+color: #212121;
+}
+
 .project-title {
 color:var(--title-text-color);
 font-weight: 700;
