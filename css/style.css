@@ -46,6 +46,23 @@ list-style-type: none;
     text-decoration: none;   
 }
 
+.reset-button {
+    border:0;
+}
+
+.reset-h {
+margin:0;
+padding:0;
+
+}
+
+.reset-p {
+margin:0;
+padding:0;
+
+}
+/* Можно было сделать сброс по тегам, или еще проще подключить  reset.css */
+
 address {
 
     font-style: normal;  
@@ -178,7 +195,17 @@ color: var(--title-text-color);
 font-weight: 700;
 line-height: 1.14;
 
+
 }
+.feature-desc {
+color: var(--title-text-color);
+font-weight: 700;
+line-height: 1.14;
+text-transform: uppercase;
+
+margin-bottom:10px;
+}
+
 .box-title {
 color:#ffffff;  
 font-weight: 700;
@@ -203,9 +230,7 @@ font-size: 16px;
 line-height: 1.19;
 
 }
-.reset-button {
-    border:0;
-}
+
 
 .button {
 display: inline-block;
